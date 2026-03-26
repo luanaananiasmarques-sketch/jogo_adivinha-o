@@ -1,0 +1,14 @@
+numero_secreto = 7  # escolha o número aqui
+
+for tentativa in range(1, 6):  # 5 tentativas
+    palpite = int(input(f"Tentativa {tentativa}: Digite um número: "))
+
+    if palpite == numero_secreto:
+        print("Parabéns!")
+        break
+    elif palpite > numero_secreto:
+        print("O número é menor.")
+    else:
+        print("O número é maior.")
+else:
+    print(f"Você perdeu! O número era {numero_secreto}.")
